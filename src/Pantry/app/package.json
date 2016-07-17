@@ -1,0 +1,32 @@
+{
+  "name": "pantry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Matt Schwartz",
+  "license": "ISC",
+  "scripts": {
+    "start-dev": "better-npm-run start-dev",
+    "start-prod": ""
+  },
+  "betterScripts": {
+    "start-dev": {
+      "command": "node server.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "dependencies": {
+    "better-npm-run": "0.0.9",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux-middleware": "^0.1.21",
+    "redux-react-router": "^1.0.0-beta3",
+    "redux-thunk": "^2.1.0",
+    "webpack": "^1.13.1"
+  }
+}

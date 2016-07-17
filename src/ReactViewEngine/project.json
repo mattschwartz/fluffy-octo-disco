@@ -1,0 +1,23 @@
+﻿{
+    "authors": [ "Matt Schwartz" ],
+    "frameworks": {
+        "netcoreapp1.0": {
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "type": "platform",
+                    "version": "1.0.0"
+                }
+            },
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ]
+        }
+    },
+    "dependencies": {
+        "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.0",
+        "Microsoft.AspNetCore.NodeServices": "1.0.0-beta-000007"
+    },
+    "version": "1.0.0-*"
+}
