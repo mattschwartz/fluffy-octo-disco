@@ -18,7 +18,10 @@
 x64/
 x86/
 bld/
-[Bb]in/
+[Pp]antry/[Bb]in/
+[Pp]antry.[Aa]pi/[Bb]in/
+[Pp]antry.[Ll]ib/[Bb]in/
+[Rr]eact[Vv]iew[Ee]ngine/[Bb]in/
 [Oo]bj/
 [Ll]og/
 
