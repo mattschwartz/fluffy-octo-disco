@@ -19,7 +19,8 @@ import getRoutes from './routes';
 const pretty = new PrettyError();
 const app = new Express();
 
-app.use(compression());
+// TODO: Figure out how to get this decompressed on the server
+// app.use(compression());
 app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
