@@ -28,7 +28,7 @@ namespace ReactViewEngine
             var startInfo = new ProcessStartInfo
             {
                 FileName = GetPathToNpm(),
-                Arguments = $"run start-dev {Options.Port}",
+                Arguments = $"run dev",
                 RedirectStandardError = true,
                 RedirectStandardOutput = true,
                 WorkingDirectory = Options.PackageRoot
@@ -47,6 +47,8 @@ namespace ReactViewEngine
 
         private static void _expressServer_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
+            // if Mac
+            Console.WriteLine(string.Format("[Node Express Server] {0}", e.Data));
             Debug.WriteLine(string.Format("[Node Express Server] {0}", e.Data));
         }
 

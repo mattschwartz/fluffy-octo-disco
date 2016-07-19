@@ -27,6 +27,8 @@ namespace Pantry
             var builder = new ConfigurationBuilder()
                 .SetBasePath(_contentRoot)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                // if Mac
+                .AddJsonFile("appsettings.osx.json")
                 .AddEnvironmentVariables();
 
             if (env.IsDevelopment()) {
@@ -44,9 +46,10 @@ namespace Pantry
 
             services.AddReactViewEngine(new NodeServerOptions
             {
-                IsDevelopment = _isDevelopment,
+                IsDevelopment = true, //_isDevelopment,
                 PackageRoot = Path.Combine(_contentRoot, "app"),
-                Port = 3000
+                Port = 3000,
+                PathToNpm = Configuration["PathToNpm"]
             });
 
             services.AddMvc();

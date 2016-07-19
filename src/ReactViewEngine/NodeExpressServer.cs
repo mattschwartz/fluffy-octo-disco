@@ -17,7 +17,7 @@ namespace ReactViewEngine
         private static Uri GetBaseUri(ViewContext context)
         {
             string uri = string.Format("http://localhost:{0}{1}",
-                NodeInstance.Options.Port, 
+                NodeInstance.Options.Port,
                 context.HttpContext.Request.Path);
 
             return new Uri(uri);
@@ -41,6 +41,7 @@ namespace ReactViewEngine
             }
 
             string html = null;
+            request.Method = HttpMethod.Get.Method;
 
             using (var response = await request.GetResponseAsync())
             using (var stream = response.GetResponseStream())
