@@ -305,3 +305,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 src/Pantry/bundleconfig.json
+src/Pantry/bower.json
