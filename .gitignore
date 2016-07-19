@@ -306,3 +306,4 @@ $RECYCLE.BIN/
 *.lnk
 src/Pantry/bundleconfig.json
 src/Pantry/bower.json
+src/Pantry/.bowerrc
